@@ -19,8 +19,7 @@ export default function AboutPage() {
             </h2>
             <small className="text-white px-1">Joeragan Properti</small>
             <p className="text-md text-white py-6">
-              Body text for whatever you’d like to add more to the subheading.
-              add more to the subheading. add more to the subheading.
+              Perusahaan Properti Ter-Ramah Yang Siap Bantu Seluruh Kebutuhan Terkait Properti Anda. Bersama Joeragan Properti, #BeraniMelangkahMembangunNegeri
             </p>
           </div>
         </div>
