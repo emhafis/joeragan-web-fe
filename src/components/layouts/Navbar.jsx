@@ -3,6 +3,11 @@ import { useState } from "react"
 
 export default function Navbar() {
   const [navIsOpen, setNavIsOpen] = useState(false)
+  const message = encodeURIComponent(
+    "Halo, saya dari website Joeragan Properti ingin bertanya."
+  );
+
+  const phone = "6285270620425";
 
   return (
     <div className="z-20 bg-white shadow-sm text-basic fixed top-0 left-0 w-full">
@@ -40,7 +45,7 @@ export default function Navbar() {
               Perumahan dan Kosan
             </p>
           </Link>
-          <a href="https://wa.me/085270620425">
+          <a href={`https://api.whatsapp.com/send?phone=${phone}&text=${message}`}>
             <p className="hover:text-primary">
               Kontak Kami
             </p>
@@ -77,7 +82,7 @@ export default function Navbar() {
           <Link className="text-md" to="/about">Tentang Kami</Link>
           <Link className="text-md" to="/projects">Proyek Konstruksi dan Interior</Link>
           <Link className="text-md" to="/properties">Perumahan dan Kosan</Link>
-          <a className="text-md" href="https://wa.me/085270620425">Hubungi Kami</a>
+          <a className="text-md" href={`https://api.whatsapp.com/send?phone=${phone}&text=${message}`}>Hubungi Kami</a>
         </div>
 
         <div className="border-t py-6 text-center text-gray-600">
