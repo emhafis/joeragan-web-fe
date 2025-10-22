@@ -77,7 +77,7 @@ export default function Navbar() {
           <Link className="text-md" to="/about">Tentang Kami</Link>
           <Link className="text-md" to="/projects">Proyek Konstruksi dan Interior</Link>
           <Link className="text-md" to="/properties">Perumahan dan Kosan</Link>
-          <Link className="text-md" to="#contact">Lihat Perumahan dan Kosan</Link>
+          <a className="text-md" href="https://wa.me/085270620425">Hubungi Kami</a>
         </div>
 
         <div className="border-t py-6 text-center text-gray-600">
